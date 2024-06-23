@@ -1,4 +1,4 @@
-﻿namespace Auction.Entities
+﻿namespace AuctionManagement.Entities
 {
     public enum EStatus
     {

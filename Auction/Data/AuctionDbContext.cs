@@ -1,8 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AuctionManagement.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Auction.Data
+namespace AuctionManagement.Data
 {
     public class AuctionDbContext : DbContext
     {
+        public AuctionDbContext(DbContextOptions options) : base(options)
+        { }
+
+        public DbSet<Auction> Auctions { get; set; }
+
     }
 }
